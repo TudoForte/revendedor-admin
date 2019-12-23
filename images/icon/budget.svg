@@ -3,7 +3,7 @@
 <svg version="1.1" id="Camada_1" xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink" x="0px" y="0px"
 	 viewBox="0 0 480 480" style="enable-background:new 0 0 480 480;" xml:space="preserve">
 <style type="text/css">
-	.st0{fill:#3F3F3F;}
+	.st0{fill:#FFFFFF;}
 </style>
 <path class="st0" d="M240,0C107.5,0,0,107.5,0,240s107.5,240,240,240s240-107.5,240-240C479.9,107.5,372.5,0.1,240,0z M240,464
 	C116.3,464,16,363.7,16,240S116.3,16,240,16s224,100.3,224,224C463.9,363.7,363.7,463.9,240,464z"/>
