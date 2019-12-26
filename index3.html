@@ -506,10 +506,14 @@
             <!-- WELCOME-->
             <section class="welcome p-t-20">
                 <div class="container">
-                    <div class="row">
-                        <div class="col-md-12">
-                            <h1 class="title-4">Mês: Dezembro
-                            </h1>
+                    <div class="row justify-content-md-center">
+                        <div class="col-md-3">
+                            <div class="form-group row">
+                                <label for="example-month-input" class="col-2 col-form-label">Mês:</label>
+                                <div class="col-10">
+                                  <input class="form-control" type="month" value="2019-12" id="example-month-input">
+                                </div>
+                              </div>
                             <!-- <hr class="line-seprate"> -->
                         </div>
                     </div>
@@ -558,24 +562,21 @@
             </section>
             <!-- END STATISTIC-->
 
- <!-- BREADCRUMB-->
- <section class="au-breadcrumb2">
-    <div class="container">
-        <div class="row">
-            <div class="col-lg-12">
-                <div class="au-breadcrumb-content">
-                    <form class="form-header form-header" action="" method="post">
-                        <input class="au-input au-input--w435" type="text" name="search" placeholder="Busca...">
-                        <button class="au-btn--submit" type="submit">
-                            <i class="zmdi zmdi-search"></i>
-                        </button>
-                    </form>
+
+            <section >
+                <div class="container">
+                    <div class="row justify-content-center">
+                        <form class="form-header " action="" method="POST">
+                            <input class="au-input au-input--xl" type="text" name="search" placeholder="Pesquisar" />
+                            <button class="au-btn--submit" type="submit">
+                                <i class="zmdi zmdi-search"></i>
+                            </button>
+                        </form> 
+                    </div>
                 </div>
-            </div>
-        </div>
-    </div>
-</section>
-<!-- END BREADCRUMB-->
+            </section>
+        
+           
 
             <!-- DATA TABLE-->
             <section class="p-t-20">
@@ -596,7 +597,7 @@
                                                             <p>
                                                             <strong>Pedido: </strong> 123456  
                                                             </p>
-                                                             
+                                                            <i class="zmdi zmdi-file-text file" data-toggle="modal" data-target="#ModalLongoExemplo"></i>
                                                         </div>
                                                         <div class="item-task">
                                                             <p>
@@ -615,22 +616,26 @@
                                                         </div>
                                                         <div class="item-task">
                                                             <span class="status-approved">Status: Aprovado</span>
-                                                            <i class="zmdi zmdi-shopping-cart-plus cart"></i>
-                                                        </div>
+                                                           
+                                                            
+                                                            <button class="btn" data-toggle="tooltip" data-html="true" title="Alterar Forma de Pagamento">
+                                                                <i class="zmdi zmdi-money-box money" data-toggle="modal" data-target="#ModalLongoExemplo2"></i>
+                                                            </button>
+                                                        </div>  
                                                     </div>
                                                 </div>
                                                 <div class="au-task__item au-task__item--danger">
                                                     <div class="au-task__item-inner wrapper-task">
                                                         <div class="item-task">
                                                            <p>
-                                                            <strong>Data:</strong> 23/12
+                                                            <strong>Data:</strong> 25/12
                                                            </p> 
                                                         </div>
                                                         <div class="item-task">
                                                             <p>
                                                             <strong>Pedido: </strong> 123456  
                                                             </p>
-                                                           
+                                                            <i class="zmdi zmdi-file-text file" data-toggle="modal" data-target="#ModalLongoExemplo"></i>
                                                         </div>
                                                         <div class="item-task">
                                                             <p>
@@ -639,17 +644,17 @@
                                                         </div>
                                                         <div class="item-task">
                                                             <p>
-                                                            <strong>Valor: </strong> R$300,00
+                                                            <strong>Valor: </strong> R$4.500,00
                                                             </p>
                                                         </div>
                                                         <div class="item-task">
                                                             <p>
-                                                            <strong>Comissão: </strong> R$30,00
+                                                            <strong>Comissão: </strong> R$450,00
                                                             </p>
                                                         </div>
                                                         <div class="item-task">
                                                             <span class="status-rejected">Status: Aprovado</span>
-                                                            <i class="zmdi zmdi-shopping-cart-plus cart"></i>
+                                                            <!-- <i class="zmdi zmdi-shopping-cart-plus cart"></i> -->
                                                         </div>
                                                     </div>
                                                 </div>
@@ -663,26 +668,27 @@
                                                         <div class="item-task">
                                                             <p>
                                                             <strong>Pedido: </strong> 123456
-                                                            </p>  
+                                                            </p>
+                                                            <i class="zmdi zmdi-file-text file" data-toggle="modal" data-target="#ModalLongoExemplo"></i> 
                                                         </div>
                                                         <div class="item-task">
                                                             <p>
-                                                            <strong>Cliente: </strong> Raphael Machado Freire
+                                                            <strong>Cliente: </strong> Caio Carneiro
                                                             </p>
                                                         </div>
                                                         <div class="item-task">
                                                             <p>
-                                                            <strong>Valor: </strong> R$300,00
+                                                            <strong>Valor: </strong> R$15.000,00
                                                             </p>
                                                         </div>
                                                         <div class="item-task">
                                                             <p>
-                                                            <strong>Comissão: </strong> R$30,00
+                                                            <strong>Comissão: </strong> R$1.500,00
                                                             </p>
                                                         </div>
                                                         <div class="item-task">
                                                             <span class="status-wait">Status: Aprovado</span>
-                                                            <i class="zmdi zmdi-shopping-cart-plus cart"></i>
+                                                            <!-- <i class="zmdi zmdi-shopping-cart-plus cart"></i> -->
                                                         </div>
                                                     </div>
                                                 </div>
@@ -696,26 +702,27 @@
                                                         <div class="item-task">
                                                             <p>
                                                             <strong>Pedido: </strong> 123456  
-                                                            </p> 
+                                                            </p>
+                                                            <i class="zmdi zmdi-file-text file" data-toggle="modal" data-target="#ModalLongoExemplo"></i>
                                                         </div>
                                                         <div class="item-task">
                                                             <p>
-                                                            <strong>Cliente: </strong> Raphael Machado Freire
+                                                            <strong>Cliente: </strong> Julio Matheus de Araujo
                                                             </p>
                                                         </div>
                                                         <div class="item-task">
                                                             <p>
-                                                            <strong>Valor: </strong> R$300,00
+                                                            <strong>Valor: </strong> R$5.000,00
                                                             </p>
                                                         </div>
                                                         <div class="item-task">
                                                             <p>
-                                                            <strong>Comissão: </strong> R$30,00
+                                                            <strong>Comissão: </strong> R$500,00
                                                             </p>
                                                         </div>
                                                         <div class="item-task">
                                                             <span class="status-approved">Status: Aprovado</span>
-                                                            <i class="zmdi zmdi-shopping-cart-plus cart"></i>
+                                                            <!-- <i class="zmdi zmdi-shopping-cart-plus cart"></i> -->
                                                         </div>
                                                     </div>
                                                 </div>
@@ -732,6 +739,141 @@
             <!-- END DATA TABLE-->
 
         </div>
+
+
+        <!-- MODAL PEDIDO -->
+                <div class="modal fade" id="ModalLongoExemplo" tabindex="-1" role="dialog" aria-labelledby="TituloModalLongoExemplo" aria-hidden="true">
+                    <div class="modal-dialog" role="document">
+                    <div class="modal-content">
+                        <div class="modal-header">
+                        <h5 class="modal-title" id="TituloModalLongoExemplo">Informações do Pedido</h5>
+                        <button type="button" class="close" data-dismiss="modal" aria-label="Fechar">
+                            <span aria-hidden="true">&times;</span>
+                        </button>
+                        </div>
+                        <div class="modal-body">
+                            
+                            <div class="col-lg-12">
+                                <!-- TOP CAMPAIGN-->
+                                <div class="top-campaign">
+                                    <div class="table-responsive">
+                                        <table class="table table-top-campaign">
+                                            <tbody>
+                                                <tr>
+                                                    <td>1. Australia</td>
+                                                    <td>$70,261.65</td>
+                                                </tr>
+                                                <tr>
+                                                    <td>2. United Kingdom</td>
+                                                    <td>$46,399.22</td>
+                                                </tr>
+                                                <tr>
+                                                    <td>3. Turkey</td>
+                                                    <td>$35,364.90</td>
+                                                </tr>
+                                                <tr>
+                                                    <td>4. Germany</td>
+                                                    <td>$20,366.96</td>
+                                                </tr>
+                                                <tr>
+                                                    <td>5. France</td>
+                                                    <td>$10,366.96</td>
+                                                </tr>
+                                                <tr>
+                                                    <td>3. Turkey</td>
+                                                    <td>$35,364.90</td>
+                                                </tr>
+                                                <tr>
+                                                    <td>4. Germany</td>
+                                                    <td>$20,366.96</td>
+                                                </tr>
+                                                <tr>
+                                                    <td>5. France</td>
+                                                    <td>$10,366.96</td>
+                                                </tr>
+                                                <tr>
+                                                    <td>3. Turkey</td>
+                                                    <td>$35,364.90</td>
+                                                </tr>
+                                                <tr>
+                                                    <td>4. Germany</td>
+                                                    <td>$20,366.96</td>
+                                                </tr>
+                                                <tr>
+                                                    <td>5. France</td>
+                                                    <td>$10,366.96</td>
+                                                </tr>
+                                                <tr>
+                                                    <td>4. Germany</td>
+                                                    <td>$20,366.96</td>
+                                                </tr>
+                                            </tbody>
+                                        </table>
+                                    </div>
+                                </div>
+                                <!--  END TOP CAMPAIGN-->
+                            </div>
+
+
+                        </div>
+                        <div class="modal-footer">
+                        <button type="button" class="btn btn-primary" data-dismiss="modal">Fechar</button>
+                        </div>
+                    </div>
+                    </div>
+                </div>
+        <!-- END MODAL -->
+
+
+        <!-- MODAL PEDIDO -->
+        <div class="modal fade" id="ModalLongoExemplo2" tabindex="-1" role="dialog" aria-labelledby="TituloModalLongoExemplo2" aria-hidden="true">
+            <div class="modal-dialog" role="document">
+            <div class="modal-content">
+                <div class="modal-header">
+                <h5 class="modal-title" id="TituloModalLongoExemplo">Alterar Forma de Pagamento</h5>
+                <button type="button" class="close" data-dismiss="modal" aria-label="Fechar">
+                    <span aria-hidden="true">&times;</span>
+                </button>
+                </div>
+                <div class="modal-body">
+               
+
+                
+
+                <div class="custom-control custom-radio">
+                    <input type="radio" id="customRadio1" name="customRadio" class="custom-control-input">
+                    <label class="custom-control-label" for="customRadio1">
+                        Cartão de Crédito - 10x S/ Juros
+                        <img src="images/icon/boleto.svg" alt="" class="pagamento"/>
+                    </label>
+                  </div>
+                  <div class="custom-control custom-radio">
+                    <input type="radio" id="customRadio2" name="customRadio" class="custom-control-input">
+                    <label class="custom-control-label" for="customRadio2">
+                        Boleto Bancário - 7% Desconto
+                        <img src="images/icon/credit-card.svg" alt="" class="pagamento"/>
+                    </label>
+                  </div>
+                
+
+                 
+
+                </div>
+                <div class="modal-footer">
+                <button type="button" class="btn btn-primary" data-dismiss="modal">Alterar Forma de Pagamento</button>
+                </div>
+            </div>
+            </div>
+        </div>
+<!-- END MODAL -->
+
+
+        
+       
+
+       
+
+
 
          <!-- BUDGET -->
         <div class="wrapper-budget fixed-bottom">
