@@ -5132,6 +5132,16 @@ section {
     background: #fa4251;
 }
 
+.statistic__item--purple{
+    background: #9b59b6;
+}
+
+.statistic__item--gray{
+    background: #7f8c8d;
+}
+
+
+
 /* ----- Statistic 2 ----- */
 .statistic2 {
     padding-top: 20px;
