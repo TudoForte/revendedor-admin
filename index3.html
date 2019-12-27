@@ -238,20 +238,20 @@
                                     <div class="account-dropdown__body">
                                         <div class="account-dropdown__item">
                                             <a href="#">
-                                                <i class="zmdi zmdi-account"></i>Account</a>
+                                                <i class="zmdi zmdi-account"></i>Conta</a>
                                         </div>
-                                        <div class="account-dropdown__item">
+                                        <!-- <div class="account-dropdown__item">
                                             <a href="#">
                                                 <i class="zmdi zmdi-settings"></i>Setting</a>
                                         </div>
                                         <div class="account-dropdown__item">
                                             <a href="#">
                                                 <i class="zmdi zmdi-money-box"></i>Billing</a>
-                                        </div>
+                                        </div> -->
                                     </div>
                                     <div class="account-dropdown__footer">
                                         <a href="#">
-                                            <i class="zmdi zmdi-power"></i>Logout</a>
+                                            <i class="zmdi zmdi-power"></i>Sair</a>
                                     </div>
                                 </div>
                             </div>
@@ -479,20 +479,20 @@
                             <div class="account-dropdown__body">
                                 <div class="account-dropdown__item">
                                     <a href="#">
-                                        <i class="zmdi zmdi-account"></i>Account</a>
+                                        <i class="zmdi zmdi-account"></i>Conta</a>
                                 </div>
-                                <div class="account-dropdown__item">
+                                <!-- <div class="account-dropdown__item">
                                     <a href="#">
                                         <i class="zmdi zmdi-settings"></i>Setting</a>
                                 </div>
                                 <div class="account-dropdown__item">
                                     <a href="#">
                                         <i class="zmdi zmdi-money-box"></i>Billing</a>
-                                </div>
+                                </div> -->
                             </div>
                             <div class="account-dropdown__footer">
                                 <a href="#">
-                                    <i class="zmdi zmdi-power"></i>Logout</a>
+                                    <i class="zmdi zmdi-power"></i>Sair</a>
                             </div>
                         </div>
                     </div>
@@ -506,17 +506,22 @@
             <!-- WELCOME-->
             <section class="welcome p-t-20">
                 <div class="container">
+
                     <div class="row justify-content-md-center">
-                        <div class="col-md-3">
+                        <div class="col-md-8"><h1 class="title-1">Painel de Resultados</h1></div>
+                        
+                        <div class="col-md-4">
                             <div class="form-group row">
-                                <label for="example-month-input" class="col-2 col-form-label">Mês:</label>
-                                <div class="col-10">
+                                <label for="example-month-input" class="col-5 col-form-label" style="text-align: right">Filtre por Mês:</label>
+                                <div class="col-7">
                                   <input class="form-control" type="month" value="2019-12" id="example-month-input">
                                 </div>
                               </div>
                             <!-- <hr class="line-seprate"> -->
                         </div>
                     </div>
+                  
+                   
                 </div>
             </section>
             <!-- END WELCOME-->
@@ -531,12 +536,6 @@
                                     <span class="currency">R$</span>12.125<span class="cents">,00</span>
                                 </h2>
                                 <span class="desc">Comissão</span>
-                            </div>
-                        </div>
-                        <div class="wrapper_statistic__item col-md-6 col-lg-2">
-                            <div class="statistic__item statistic__item--orange">
-                                <img class="closures" src="images/icon/budget.svg" alt="Logo Fechamentos" width="25px">
-                                <span class="desc">Admin</span>
                             </div>
                         </div>
 
@@ -574,21 +573,33 @@
                             </div>
                         </div>
 
+                        <div class="wrapper_statistic__item col-md-6 col-lg-2">
+                            <div class="statistic__item statistic__item--orange">
+                                <img class="closures" src="images/icon/budget.svg" alt="Logo Fechamentos" width="25px">
+                                <span class="desc">Admin</span>
+                            </div>
+                        </div>
+
                     </div>
                 </div>
             </section>
             <!-- END STATISTIC-->
 
 
-            <section >
+            <section>
                 <div class="container">
-                    <div class="row justify-content-center">
+                    <div class="row">
+                        <div class="col-sm-12 col-lg-8">
+                            <h1 class="title-1">Desempenho em Vendas Por Pedido</h1>
+                        </div>
+                        <div class="col-sm-12 col-lg-4">
                         <form class="form-header " action="" method="POST">
-                            <input class="au-input au-input--xl" type="text" name="search" placeholder="Pesquisar" />
+                            <input class="au-input au-input--full" type="text" name="search" placeholder="Busque por Id do Pedido, Cliente ou Valor..." />
                             <button class="au-btn--submit" type="submit">
                                 <i class="zmdi zmdi-search"></i>
                             </button>
-                        </form> 
+                        </form>
+                        </div> 
                     </div>
                 </div>
             </section>

@@ -161,7 +161,8 @@ strong {
 }
 
 .title-1 {
-    text-transform: capitalize;
+    /* text-transform: capitalize; */
+    color: black;
     font-weight: 400;
     font-size: 30px;
 }
@@ -2959,7 +2960,7 @@ section {
 }
 
 .account-item--style2 .content a:hover {
-    color: #fff;
+    color: rgb(209, 209, 209);
 }
 
 .account-item--style2 .account-dropdown {
@@ -5301,7 +5302,7 @@ section {
     }
 
     .statistic__item .desc {
-        font-size: 0.70rem;
+        font-size: 0.6rem;
         color: #ffff;
     }
 
@@ -5360,8 +5361,14 @@ section {
 
 
 @media(max-width: 320px){
-    .statistic__item .desc {
+
+    .title-1{
         font-size: 0.5rem;
+    }
+
+
+    .statistic__item .desc {
+        font-size: 0.4rem;
         color: #ffff;
     }
 
