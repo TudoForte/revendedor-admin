@@ -503,368 +503,249 @@
 
             <!-- PAGE CONTENT-->
             <div class="page-content--bgf7">
-                <!-- WELCOME-->
-                <section class="welcome p-t-20">
-                    <div class="container">
 
-                        <div class="row justify-content-md-center">
-                            <div class="col-md-6">
-                                <h1 class="title-1">Painel de Resultados</h1>
-                            </div>
-
-                            <div class="col-md-6">
-                                <div class="form-group row">
-                                    <label for="example-month-input" class="col-md-5 col-sm-12 col-form-label">Filtre
-                                        por Mês:</label>
-                                    <div class="col-md-7 col-sm-12">
-                                        <input class="form-control" type="month" value="2019-12"
-                                            id="example-month-input">
-                                    </div>
-                                </div>
-                                <!-- <hr class="line-seprate"> -->
-                            </div>
-                        </div>
-
-
-                    </div>
-                </section>
-                <!-- END WELCOME-->
-
-                <!-- STATISTIC-->
-                <section class="statistic statistic2">
-                    <div class="container">
-                        <div class="row">
-                            <div class="wrapper_statistic__item col-md-6 col-lg-2">
-                                <div class="statistic__item statistic__item--green wrapper-item">
-                                    <h2 class="number">
-                                        <span class="currency">R$</span>12.125<span class="cents">,00</span>
-                                    </h2>
-                                    <p class="desc">Comissão</p>
-                                </div>
-                            </div>
-
-                            <div class="wrapper_statistic__item col-md-6 col-lg-2">
-                                <div class="statistic__item statistic__item--red wrapper-item">
-                                    <h2 class="number">
-                                        <span class="currency">R$</span>12.125<span class="cents">,00</span>
-                                    </h2>
-                                    <p class="desc">Orçamentos</p>
-                                </div>
-                            </div>
-
-                            <div class="wrapper_statistic__item col-md-6 col-lg-2">
-                                <div class="statistic__item statistic__item--gray wrapper-item">
-                                    <h2 class="number"><span class="currency">R$</span>1.650<span
-                                            class="cents">,00</span>
-                                    </h2>
-                                    <p class="desc">Pedidos Pendentes</p>
-                                </div>
-                            </div>
-
-                            <div class="wrapper_statistic__item col-md-6 col-lg-2">
-                                <div class="statistic__item statistic__item--blue wrapper-item">
-                                    <h2 class="number">
-                                        <span class="currency">R$</span>18.458<span class="cents">,00</span>
-                                    </h2>
-                                    <p class="desc">Pedidos Pagos</p>
-                                </div>
-                            </div>
-
-                            <div class="wrapper_statistic__item col-md-6 col-lg-2">
-                                <div class="statistic__item statistic__item--purple wrapper-item">
-                                    <h2 class="number"><span class="currency">R$</span>1.650<span
-                                            class="cents">,00</span>
-                                    </h2>
-                                    <p class="desc">Pedidos Não Aprovados</p>
-                                </div>
-                            </div>
-
-                            <div class="wrapper_statistic__item col-md-6 col-lg-2">
-                                <div class="statistic__item statistic__item--orange wrapper-item">
-                                    <img class="closures" src="images/icon/budget.svg" alt="Logo Fechamentos"
-                                        width="25px">
-                                    <p class="desc">Admin</p>
-                                </div>
-                            </div>
-
-                        </div>
-                    </div>
-                </section>
-                <!-- END STATISTIC-->
-
-
-                <section>
-                    <div class="container">
-                        <div class="row">
-                            <div class="col-sm-12 col-lg-8">
-                                <h1 class="title-1 wrapper-title">Desempenho em Vendas Por Pedido</h1>
-                            </div>
-                            <div class="col-sm-12 col-lg-4">
-                                <form class="form-header " action="" method="POST">
-                                    <input class="au-input au-input--full" type="text" name="search"
-                                        placeholder="Busque por Id do Pedido, Cliente ou Valor..." />
-                                    <button class="au-btn--submit" type="submit">
-                                        <i class="zmdi zmdi-search"></i>
-                                    </button>
-                                </form>
-                            </div>
-                        </div>
-                    </div>
-                </section>
-
-
-
-                <!-- DATA TABLE-->
                 <section class="p-t-20">
                     <div class="container">
+
                         <div class="row">
-                            <div class="col-lg-12">
-                                <div class="au-card au-card--no-shadow au-card--no-pad m-b-40">
-                                    <div class="au-task js-list-load">
-                                        <div class="au-task-list js-scrollbar3">
-                                            <div class="au-task__item au-task__item--success">
-                                                <div class="au-task__item-inner wrapper-task">
-                                                    <div class="item-task">
-                                                        <p>
-                                                            <strong>Data:</strong> 23/12
-                                                        </p>
-                                                    </div>
-                                                    <div class="item-task">
-                                                        <p>
-                                                            <strong>Pedido: </strong> 123456
-                                                        </p>
-                                                        <i class="zmdi zmdi-file-text file"></i>
-                                                    </div>
-                                                    <div class="item-task">
-                                                        <p>
-                                                            <strong>Cliente: </strong> Raphael Machado Freire
-                                                        </p>
-                                                    </div>
-                                                    <div class="item-task">
-                                                        <p>
-                                                            <strong>Valor: </strong> R$300,00
-                                                        </p>
-                                                    </div>
-                                                    <div class="item-task">
-                                                        <p>
-                                                            <strong>Comissão: </strong> R$30,00
-                                                        </p>
-                                                    </div>
-                                                    <div class="item-task">
-                                                        <span class="status-approved">Status: Aprovado</span>
-
-
-                                                        <!-- <a class="btn" data-toggle="tooltip" data-html="true" title="Alterar Forma de Pagamento"> -->
-                                                        <!-- <i class="zmdi zmdi-money-box money" data-toggle="modal" data-target="#ModalLongoExemplo2"></i> -->
-                                                        <!-- </a> -->
-                                                    </div>
-                                                </div>
-                                            </div>
-                                            <div class="au-task__item au-task__item--danger">
-                                                <div class="au-task__item-inner wrapper-task">
-                                                    <div class="item-task">
-                                                        <p>
-                                                            <strong>Data:</strong> 25/12
-                                                        </p>
-                                                    </div>
-                                                    <div class="item-task">
-                                                        <p>
-                                                            <strong>Pedido: </strong> 123456
-                                                        </p>
-                                                        <i class="zmdi zmdi-file-text file"></i>
-                                                    </div>
-                                                    <div class="item-task">
-                                                        <p>
-                                                            <strong>Cliente: </strong> Rodrigo Freire Soares
-                                                        </p>
-                                                    </div>
-                                                    <div class="item-task">
-                                                        <p>
-                                                            <strong>Valor: </strong> R$4.500,00
-                                                        </p>
-                                                    </div>
-                                                    <div class="item-task">
-                                                        <p>
-                                                            <strong>Comissão: </strong> R$450,00
-                                                        </p>
-                                                    </div>
-                                                    <div class="item-task">
-                                                        <span class="status-rejected">Status: Aprovado</span>
-                                                        <!-- <i class="zmdi zmdi-shopping-cart-plus cart"></i> -->
-                                                    </div>
-                                                </div>
-                                            </div>
-                                            <div class="au-task__item au-task__item--warning">
-                                                <div class="au-task__item-inner wrapper-task">
-                                                    <div class="item-task">
-                                                        <p>
-                                                            <strong>Data:</strong> 23/12
-                                                        </p>
-                                                    </div>
-                                                    <div class="item-task">
-                                                        <p>
-                                                            <strong>Pedido: </strong> 123456
-                                                        </p>
-                                                        <i class="zmdi zmdi-file-text file"></i>
-                                                    </div>
-                                                    <div class="item-task">
-                                                        <p>
-                                                            <strong>Cliente: </strong> Caio Carneiro
-                                                        </p>
-                                                    </div>
-                                                    <div class="item-task">
-                                                        <p>
-                                                            <strong>Valor: </strong> R$15.000,00
-                                                        </p>
-                                                    </div>
-                                                    <div class="item-task">
-                                                        <p>
-                                                            <strong>Comissão: </strong> R$1.500,00
-                                                        </p>
-                                                    </div>
-                                                    <div class="item-task">
-                                                        <span class="status-wait">Status: Aprovado</span>
-                                                        <!-- <i class="zmdi zmdi-shopping-cart-plus cart"></i> -->
-                                                    </div>
-                                                </div>
-                                            </div>
-                                            <div class="au-task__item au-task__item--success">
-                                                <div class="au-task__item-inner wrapper-task">
-                                                    <div class="item-task">
-                                                        <p>
-                                                            <strong>Data:</strong> 23/12
-                                                        </p>
-                                                    </div>
-                                                    <div class="item-task">
-                                                        <p>
-                                                            <strong>Pedido: </strong> 123456
-                                                        </p>
-                                                        <i class="zmdi zmdi-file-text file"></i>
-                                                    </div>
-                                                    <div class="item-task">
-                                                        <p>
-                                                            <strong>Cliente: </strong> Julio Matheus de Araujo
-                                                        </p>
-                                                    </div>
-                                                    <div class="item-task">
-                                                        <p>
-                                                            <strong>Valor: </strong> R$5.000,00
-                                                        </p>
-                                                    </div>
-                                                    <div class="item-task">
-                                                        <p>
-                                                            <strong>Comissão: </strong> R$500,00
-                                                        </p>
-                                                    </div>
-                                                    <div class="item-task">
-                                                        <span class="status-approved">Status: Aprovado</span>
-                                                        <!-- <i class="zmdi zmdi-shopping-cart-plus cart"></i> -->
-                                                    </div>
-                                                </div>
-                                            </div>
-                                        </div>
-
-                                    </div>
-                                </div>
+                            <div class="col-md-12">
+                                <h1 class="title-1">Pedido</h1>
                             </div>
                         </div>
 
+
                     </div>
+                </section>
+
+                <section class="p-t-20">
+                    <div class="container">
+
+                        <style>
+                            body {
+                                font-family: "Open Sans", sans-serif;
+                                line-height: 1.25;
+                            }
+
+                            table {
+                                border: 1px solid #ccc;
+                                border-collapse: collapse;
+                                margin: 0;
+                                padding: 0;
+                                width: 100%;
+                                table-layout: fixed;
+                            }
+
+                            table caption {
+                                font-size: 1.5em;
+                                margin: .5em 0 .75em;
+                            }
+
+                            table tr {
+                                background-color: #f8f8f8;
+                                border: 1px solid #ddd;
+                                padding: .35em;
+                            }
+
+                            table th,
+                            table td {
+                                padding: .625em;
+                                text-align: center;
+                            }
+
+                            table th {
+                                font-size: .85em;
+                                letter-spacing: .1em;
+                                text-transform: uppercase;
+                            }
+
+                            @media screen and (max-width: 600px) {
+                                table {
+                                    border: 0;
+                                }
+
+                                table caption {
+                                    font-size: 1.3em;
+                                }
+
+                                table thead {
+                                    border: none;
+                                    clip: rect(0 0 0 0);
+                                    height: 1px;
+                                    margin: -1px;
+                                    overflow: hidden;
+                                    padding: 0;
+                                    position: absolute;
+                                    width: 1px;
+                                }
+
+                                table tr {
+                                    border-bottom: 3px solid #ddd;
+                                    display: block;
+                                    margin-bottom: .625em;
+                                }
+
+                                table td {
+                                    border-bottom: 1px solid #ddd;
+                                    display: block;
+                                    font-size: .8em;
+                                    text-align: right;
+                                }
+
+                                table td::before {
+                                    /*
+    * aria-label has no advantage, it won't be read inside a table
+    content: attr(aria-label);
+    */
+                                    content: attr(data-label);
+                                    float: left;
+                                    font-weight: bold;
+                                    text-transform: uppercase;
+                                }
+
+                                table td:last-child {
+                                    border-bottom: 0;
+                                }
+                            }
+                        </style>
+
+
+                        <table>
+
+                            <thead>
+                                <tr>
+                                    <th scope="col">Número do Pedido</th>
+                                    <th scope="col">Data do Pedido</th>
+                                    <th scope="col">Nome do Cliente</th>
+                                    <th scope="col">Data do Pagamento</th>
+                                    <th scope="col">Data do Envio</th>
+                                    <th scope="col">Forma de Envio</th>
+                                    <th scope="col">Previsão de Entrega</th>
+                                </tr>
+                            </thead>
+                            <tbody>
+                                <tr>
+                                    <td data-label="Número do Pedido">1</td>
+                                    <td data-label="Data do Pedido">04/01/2016</td>
+                                    <td data-label="Nome do Cliente">Raphael Machado Freire</td>
+                                    <td data-label="Data do Pagamento">03/31/2016</td>
+                                    <td data-label="Data do Envio">03/31/2016</td>
+                                    <td data-label="Forma de Envio">Correios Convencional</td>
+                                    <td data-label="Previsão de Entrega">03/31/2016</td>
+                                </tr>
+
+                                <tr>
+                                    <td data-label="Número do Pedido">2</td>
+                                    <td data-label="Data do Pedido">04/01/2016</td>
+                                    <td data-label="Nome do Cliente">Raphael Machado Freire</td>
+                                    <td data-label="Data do Pagamento">03/31/2016</td>
+                                    <td data-label="Data do Envio">03/31/2016</td>
+                                    <td data-label="Forma de Envio">Correios Convencional</td>
+                                    <td data-label="Previsão de Entrega">03/31/2016</td>
+                                </tr>
+
+
+                                <tr>
+                                    <td data-label="Número do Pedido">3</td>
+                                    <td data-label="Data do Pedido">04/01/2016</td>
+                                    <td data-label="Nome do Cliente">Raphael Machado Freire</td>
+                                    <td data-label="Data do Pagamento">03/31/2016</td>
+                                    <td data-label="Data do Envio">03/31/2016</td>
+                                    <td data-label="Forma de Envio">Correios Convencional</td>
+                                    <td data-label="Previsão de Entrega">03/31/2016</td>
+                                </tr>
+
+
+
+                                <tr>
+                                    <td data-label="Número do Pedido">4</td>
+                                    <td data-label="Data do Pedido">04/01/2016</td>
+                                    <td data-label="Nome do Cliente">Raphael Machado Freire</td>
+                                    <td data-label="Data do Pagamento">03/31/2016</td>
+                                    <td data-label="Data do Envio">03/31/2016</td>
+                                    <td data-label="Forma de Envio">Correios Convencional</td>
+                                    <td data-label="Previsão de Entrega">03/31/2016</td>
+                                </tr>
+
+
+
+                                <tr>
+                                    <td data-label="Número do Pedido">5</td>
+                                    <td data-label="Data do Pedido">04/01/2016</td>
+                                    <td data-label="Nome do Cliente">Raphael Machado Freire</td>
+                                    <td data-label="Data do Pagamento">03/31/2016</td>
+                                    <td data-label="Data do Envio">03/31/2016</td>
+                                    <td data-label="Forma de Envio">Correios Convencional</td>
+                                    <td data-label="Previsão de Entrega">03/31/2016</td>
+                                </tr>
+
+
+
+                                <tr>
+                                    <td data-label="Número do Pedido">6</td>
+                                    <td data-label="Data do Pedido">04/01/2016</td>
+                                    <td data-label="Nome do Cliente">Raphael Machado Freire</td>
+                                    <td data-label="Data do Pagamento">03/31/2016</td>
+                                    <td data-label="Data do Envio">03/31/2016</td>
+                                    <td data-label="Forma de Envio">Correios Convencional</td>
+                                    <td data-label="Previsão de Entrega">03/31/2016</td>
+                                </tr>
+
+
+
+                                <tr>
+                                    <td data-label="Número do Pedido">7</td>
+                                    <td data-label="Data do Pedido">04/01/2016</td>
+                                    <td data-label="Nome do Cliente">Raphael Machado Freire</td>
+                                    <td data-label="Data do Pagamento">03/31/2016</td>
+                                    <td data-label="Data do Envio">03/31/2016</td>
+                                    <td data-label="Forma de Envio">Correios Convencional</td>
+                                    <td data-label="Previsão de Entrega">03/31/2016</td>
+                                </tr>
+
+
+
+                                <tr>
+                                    <td data-label="Número do Pedido">8</td>
+                                    <td data-label="Data do Pedido">04/01/2016</td>
+                                    <td data-label="Nome do Cliente">Raphael Machado Freire</td>
+                                    <td data-label="Data do Pagamento">03/31/2016</td>
+                                    <td data-label="Data do Envio">03/31/2016</td>
+                                    <td data-label="Forma de Envio">Correios Convencional</td>
+                                    <td data-label="Previsão de Entrega">03/31/2016</td>
+                                </tr>
+
+
+                            </tbody>
+                        </table>
+                        <br />
+                    </div>
+                </section>
+
             </div>
-            </section>
-            <!-- END DATA TABLE-->
 
-        </div>
+            <!-- Jquery JS-->
+            <script src="vendor/jquery-3.2.1.min.js"></script>
+            <!-- Bootstrap JS-->
+            <script src="vendor/bootstrap-4.1/popper.min.js"></script>
+            <script src="vendor/bootstrap-4.1/bootstrap.min.js"></script>
+            <!-- Vendor JS       -->
+            <script src="vendor/slick/slick.min.js">
+            </script>
+            <script src="vendor/wow/wow.min.js"></script>
+            <script src="vendor/animsition/animsition.min.js"></script>
+            <script src="vendor/bootstrap-progressbar/bootstrap-progressbar.min.js">
+            </script>
+            <script src="vendor/counter-up/jquery.waypoints.min.js"></script>
+            <script src="vendor/counter-up/jquery.counterup.min.js">
+            </script>
+            <script src="vendor/circle-progress/circle-progress.min.js"></script>
+            <script src="vendor/perfect-scrollbar/perfect-scrollbar.js"></script>
+            <script src="vendor/chartjs/Chart.bundle.min.js"></script>
+            <script src="vendor/select2/select2.min.js">
+            </script>
 
-
-
-
-
-        <!-- MODAL PEDIDO -->
-        <div class="modal fade" id="ModalLongoExemplo2" tabindex="-1" role="dialog"
-            aria-labelledby="TituloModalLongoExemplo2" aria-hidden="true">
-            <div class="modal-dialog" role="document">
-                <div class="modal-content">
-                    <div class="modal-header">
-                        <h5 class="modal-title" id="TituloModalLongoExemplo">Alterar Forma de Pagamento</h5>
-                        <button type="button" class="close" data-dismiss="modal" aria-label="Fechar">
-                            <span aria-hidden="true">&times;</span>
-                        </button>
-                    </div>
-                    <div class="modal-body">
-
-
-
-
-                        <div class="custom-control custom-radio">
-                            <input type="radio" id="customRadio1" name="customRadio" class="custom-control-input">
-                            <label class="custom-control-label" for="customRadio1">
-                                Cartão de Crédito - 10x S/ Juros
-                                <img src="images/icon/credit-card.svg" alt="" class="pagamento" />
-                            </label>
-                        </div>
-                        <div class="custom-control custom-radio">
-                            <input type="radio" id="customRadio2" name="customRadio" class="custom-control-input">
-                            <label class="custom-control-label" for="customRadio2">
-                                Boleto Bancário - 7% Desconto
-                                <img src="images/icon/boleto.svg" alt="" class="pagamento" />
-                            </label>
-                        </div>
-
-
-
-
-                    </div>
-                    <div class="modal-footer">
-                        <button type="button" class="btn btn-primary" data-dismiss="modal">Alterar Forma de
-                            Pagamento</button>
-                    </div>
-                </div>
-            </div>
-        </div>
-        <!-- END MODAL -->
-
-
-
-
-
-
-
-
-
-        <!-- BUDGET -->
-        <div class="wrapper-budget fixed-bottom">
-            <a href="#" class="button-budget"><img src="images/icon/whats.svg" alt="Imagem Orçamento" width="30px">
-                Atendimento</a>
-        </div>
-        <!-- END BUDGET -->
-
-
-        </div>
-
-        <!-- Jquery JS-->
-        <script src="vendor/jquery-3.2.1.min.js"></script>
-        <!-- Bootstrap JS-->
-        <script src="vendor/bootstrap-4.1/popper.min.js"></script>
-        <script src="vendor/bootstrap-4.1/bootstrap.min.js"></script>
-        <!-- Vendor JS       -->
-        <script src="vendor/slick/slick.min.js">
-        </script>
-        <script src="vendor/wow/wow.min.js"></script>
-        <script src="vendor/animsition/animsition.min.js"></script>
-        <script src="vendor/bootstrap-progressbar/bootstrap-progressbar.min.js">
-        </script>
-        <script src="vendor/counter-up/jquery.waypoints.min.js"></script>
-        <script src="vendor/counter-up/jquery.counterup.min.js">
-        </script>
-        <script src="vendor/circle-progress/circle-progress.min.js"></script>
-        <script src="vendor/perfect-scrollbar/perfect-scrollbar.js"></script>
-        <script src="vendor/chartjs/Chart.bundle.min.js"></script>
-        <script src="vendor/select2/select2.min.js">
-        </script>
-
-        <!-- Main JS-->
-        <script src="js/main.js"></script>
+            <!-- Main JS-->
+            <script src="js/main.js"></script>
 
     </body>
 
