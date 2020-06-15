@@ -507,20 +507,116 @@
                 <section class="p-t-20">
                     <div class="container">
 
-                        <div class="row">
-                            <div class="col-md-12">
-                                <h1 class="title-1">Pedido</h1>
+                        <style>
+                            .texto-pedido-title {
+                                text-align: center;
+                                font-size: 1.3rem;
+                            }
+
+                            .texto-pedido {
+                                font-size: 1rem;
+                                line-height: 1.8rem;
+                            }
+
+                            .info-produto {
+                                background-color: #fff;
+                                padding: 20px;
+                                -webkit-box-shadow: 13px 13px 11px -4px rgba(237, 237, 237, 0.81);
+                                -moz-box-shadow: 13px 13px 11px -4px rgba(237, 237, 237, 0.81);
+                                box-shadow: 13px 13px 11px -4px rgba(237, 237, 237, 0.81);
+
+                            }
+
+                            .margin-row {
+                                margin: 5px;
+                            }
+
+                            @media(max-width: 600px) {
+                                .texto-pedido-title {
+                                    font-size: 1rem;
+                                    line-height: 1.8rem;
+                                }
+
+                                .margin-row {
+                                    margin: 0px;
+                                }
+                            }
+                        </style>
+
+                        <div class="info-produto">
+                            <div class="row">
+                                <div class="col-md-4">
+                                    <p class="texto-pedido-title"><strong>Pedido:</strong> 1212123</p>
+                                </div>
+
+                                <div class="col-md-4">
+                                    <p class="texto-pedido-title"><strong>Status:</strong> Transportadora</p>
+                                </div>
+
+                                <div class="col-md-4">
+                                    <p class="texto-pedido-title"><strong>Data do Pedido:</strong> 19/02/1987</p>
+                                </div>
+                            </div>
+                            <br />
+
+                            <div class="row">
+                                <div class="col-md-6">
+                                    <p class="texto-pedido"><strong>Nome:</strong> Raphael Machado Freire</p>
+                                </div>
+
+                                <div class="col-md-6">
+                                    <p class="texto-pedido"><strong>CPF/CNPJ:</strong> XX.XXX.XXX/YYYY-ZZ</p>
+                                </div>
+                            </div>
+
+                            <div class="row" class="margin-row">
+                                <div class="col-md-6">
+                                    <p class="texto-pedido"><strong>Data de Pagamento:</strong> 19/06/1987</p>
+                                </div>
+
+                                <div class="col-md-6">
+                                    <p class="texto-pedido"><strong>Previsão de Entrega:</strong> 19/06/1987</p>
+                                </div>
+                            </div>
+
+                            <div class="row" class="margin-row">
+                                <div class="col-md-6">
+                                    <p class="texto-pedido"><strong>Forma de Envio:</strong> Transportadora</p>
+                                </div>
+
+                                <div class="col-md-6">
+                                    <p class="texto-pedido"><strong>Data de Envio:</strong> 19/06/1987</p>
+                                </div>
+                            </div>
+
+                            <div class="row" class="margin-row">
+                                <div class="col-md-6">
+                                    <p class="texto-pedido"><strong>Código de Rastreio:</strong> AA123456789BR</p>
+                                </div>
+
+                                <div class="col-md-6">
+                                    <p class="texto-pedido"><strong>Número Nota Fiscal:</strong> 6766689</p>
+                                </div>
                             </div>
                         </div>
 
 
                     </div>
                 </section>
-
+                <br />
                 <section class="p-t-20">
                     <div class="container">
 
                         <style>
+                            .align-td-right {
+                                text-align: right;
+                            }
+
+                            .title-table-footer {
+                                font-weight: bold;
+                                text-transform: uppercase;
+                            }
+
                             body {
                                 font-family: "Open Sans", sans-serif;
                                 line-height: 1.25;
@@ -546,6 +642,10 @@
                                 padding: .35em;
                             }
 
+                            table tr:hover {
+                                background: #fff;
+                            }
+
                             table th,
                             table td {
                                 padding: .625em;
@@ -559,6 +659,23 @@
                             }
 
                             @media screen and (max-width: 600px) {
+                                .remove-td {
+                                    display: none;
+                                }
+
+                                .remove-border {
+                                    border: 0;
+                                }
+
+                                .remove-tr-border-padding {
+                                    border: 0;
+                                    padding: 0;
+                                }
+
+                                .td-padding-remove-bottom {
+                                    padding-bottom: 0;
+                                }
+
                                 table {
                                     border: 0;
                                 }
@@ -613,106 +730,126 @@
 
                             <thead>
                                 <tr>
-                                    <th scope="col">Número do Pedido</th>
-                                    <th scope="col">Data do Pedido</th>
-                                    <th scope="col">Nome do Cliente</th>
-                                    <th scope="col">Data do Pagamento</th>
-                                    <th scope="col">Data do Envio</th>
-                                    <th scope="col">Forma de Envio</th>
-                                    <th scope="col">Previsão de Entrega</th>
+                                    <th scope="col">Imagem</th>
+                                    <th colspan="5" scope="col">Produtos</th>
+                                    <th scope="col">Qtd</th>
+                                    <th scope="col">Valor</th>
+                                    <th scope="col" class="align-td-right">Sub Total</th>
                                 </tr>
                             </thead>
                             <tbody>
                                 <tr>
-                                    <td data-label="Número do Pedido">1</td>
-                                    <td data-label="Data do Pedido">04/01/2016</td>
-                                    <td data-label="Nome do Cliente">Raphael Machado Freire</td>
-                                    <td data-label="Data do Pagamento">03/31/2016</td>
-                                    <td data-label="Data do Envio">03/31/2016</td>
-                                    <td data-label="Forma de Envio">Correios Convencional</td>
-                                    <td data-label="Previsão de Entrega">03/31/2016</td>
+                                    <td data-label="Imagem">
+                                        <img src="https://static3.tcdn.com.br/img/img_prod/332274/90_kit_motor_portao_ppa_dz_rio_400kg_1_4_deslizante_automatico_de_correr_eletronico_com_abertura_rapida_11922_variacao_3342_1_20200514150230.png?1592240705"
+                                            alt="Produto Imagem" />
+                                    </td>
+                                    <td colspan="5" data-label="Produtos">
+                                        Kit Motor Portão PPA DZ Rio 400Kg 1/4 Deslizante
+                                        Automático de Correr Eletrônico Com Abertura Rápida (Ref. 11922)
+                                        Comprimento da Cremalheira 3 m Voltagem 127V.</td>
+                                    <td data-label="Qtd">1</td>
+                                    <td data-label="Valor">R$1000,00</td>
+                                    <td data-label="Sub Total" class="remove-td remove-border align-td-right">R$1100,00
+                                    </td>
                                 </tr>
 
                                 <tr>
-                                    <td data-label="Número do Pedido">2</td>
-                                    <td data-label="Data do Pedido">04/01/2016</td>
-                                    <td data-label="Nome do Cliente">Raphael Machado Freire</td>
-                                    <td data-label="Data do Pagamento">03/31/2016</td>
-                                    <td data-label="Data do Envio">03/31/2016</td>
-                                    <td data-label="Forma de Envio">Correios Convencional</td>
-                                    <td data-label="Previsão de Entrega">03/31/2016</td>
+                                    <td data-label="Imagem">
+                                        <img src="https://static3.tcdn.com.br/img/img_prod/332274/90_kit_motor_portao_ppa_dz_rio_400kg_1_4_deslizante_automatico_de_correr_eletronico_com_abertura_rapida_11922_variacao_3342_1_20200514150230.png?1592240705"
+                                            alt="Produto Imagem" />
+                                    </td>
+                                    <td colspan="5" data-label="Produtos">
+                                        Kit Motor Portão PPA DZ Rio 400Kg 1/4 Deslizante
+                                        Automático de Correr Eletrônico Com Abertura Rápida (Ref. 11922)
+                                        Comprimento da Cremalheira 3 m Voltagem 127V.</td>
+                                    <td data-label="Qtd">1</td>
+                                    <td data-label="Valor">R$1000,00</td>
+                                    <td data-label="Sub Total" class="remove-td remove-border align-td-right">R$1100,00
+                                    </td>
                                 </tr>
-
 
                                 <tr>
-                                    <td data-label="Número do Pedido">3</td>
-                                    <td data-label="Data do Pedido">04/01/2016</td>
-                                    <td data-label="Nome do Cliente">Raphael Machado Freire</td>
-                                    <td data-label="Data do Pagamento">03/31/2016</td>
-                                    <td data-label="Data do Envio">03/31/2016</td>
-                                    <td data-label="Forma de Envio">Correios Convencional</td>
-                                    <td data-label="Previsão de Entrega">03/31/2016</td>
+                                    <td data-label="Imagem">
+                                        <img src="https://static3.tcdn.com.br/img/img_prod/332274/90_kit_motor_portao_ppa_dz_rio_400kg_1_4_deslizante_automatico_de_correr_eletronico_com_abertura_rapida_11922_variacao_3342_1_20200514150230.png?1592240705"
+                                            alt="Produto Imagem" />
+                                    </td>
+                                    <td colspan="5" data-label="Produtos">
+                                        Kit Motor Portão PPA DZ Rio 400Kg 1/4 Deslizante
+                                        Automático de Correr Eletrônico Com Abertura Rápida (Ref. 11922)
+                                        Comprimento da Cremalheira 3 m Voltagem 127V.</td>
+                                    <td data-label="Qtd">1</td>
+                                    <td data-label="Valor">R$1000,00</td>
+                                    <td data-label="Sub Total" class="remove-td remove-border align-td-right">R$1100,00
+                                    </td>
+                                </tr>
+
+                                <!-- FOOTER TABLE -->
+
+
+                                <tr class="remove-tr-border-padding">
+                                    <td colspan="6" data-label="" class="remove-td"></td>
+                                    <td colspan="2" data-label="" class="remove-td align-td-right title-table-footer">
+                                        SubTotal de Produto
+                                    </td>
+                                    <td data-label="SubTotal de Produto"
+                                        class="align-td-right td-padding-remove-bottom">R$100,00</td>
+                                </tr>
+
+                                <tr class="remove-tr-border-padding">
+                                    <td colspan="6" data-label="" class="remove-td"></td>
+                                    <td colspan="2" data-label="" class="remove-td align-td-right title-table-footer">
+                                        Cupom de
+                                        Desconto/Valor</td>
+                                    <td data-label="Cupom de Desconto/Valor"
+                                        class="align-td-right td-padding-remove-bottom ">R$25,00</td>
+                                </tr>
+
+                                <tr class="remove-tr-border-padding">
+                                    <td colspan="6" data-label="" class="remove-td"></td>
+                                    <td colspan="2" data-label="" class="remove-td align-td-right title-table-footer">
+                                        Descontos</td>
+                                    <td data-label="Descontos" class="align-td-right td-padding-remove-bottom ">R$25,00
+                                    </td>
+                                </tr>
+
+                                <tr class="remove-tr-border-padding">
+                                    <td colspan="6" data-label="" class="remove-td"></td>
+                                    <td colspan="2" data-label="" class="remove-td align-td-right title-table-footer">
+                                        Total de Produtos
+                                    </td>
+                                    <td data-label="Total de Produtos" class="align-td-right td-padding-remove-bottom">
+                                        R$1450,00</td>
+                                </tr>
+
+
+                                <tr class="remove-tr-border-padding">
+                                    <td colspan="6" data-label="" class="remove-td"></td>
+                                    <td colspan="2" data-label="" class="remove-td align-td-right title-table-footer">
+                                        Frete</td>
+                                    <td data-label="Frete" class="align-td-right td-padding-remove-bottom">R$30,00</td>
+                                </tr>
+
+                                <tr class="remove-tr-border-padding">
+                                    <td colspan="6" data-label="" class="remove-td"></td>
+                                    <td colspan="2" data-label="" class="remove-td align-td-right title-table-footer">
+                                        Total do Pedido</td>
+                                    <td data-label="Total do Pedido" class="align-td-right td-padding-remove-bottom">
+                                        R$1480,00</td>
                                 </tr>
 
 
 
-                                <tr>
-                                    <td data-label="Número do Pedido">4</td>
-                                    <td data-label="Data do Pedido">04/01/2016</td>
-                                    <td data-label="Nome do Cliente">Raphael Machado Freire</td>
-                                    <td data-label="Data do Pagamento">03/31/2016</td>
-                                    <td data-label="Data do Envio">03/31/2016</td>
-                                    <td data-label="Forma de Envio">Correios Convencional</td>
-                                    <td data-label="Previsão de Entrega">03/31/2016</td>
-                                </tr>
 
 
 
-                                <tr>
-                                    <td data-label="Número do Pedido">5</td>
-                                    <td data-label="Data do Pedido">04/01/2016</td>
-                                    <td data-label="Nome do Cliente">Raphael Machado Freire</td>
-                                    <td data-label="Data do Pagamento">03/31/2016</td>
-                                    <td data-label="Data do Envio">03/31/2016</td>
-                                    <td data-label="Forma de Envio">Correios Convencional</td>
-                                    <td data-label="Previsão de Entrega">03/31/2016</td>
-                                </tr>
 
 
 
-                                <tr>
-                                    <td data-label="Número do Pedido">6</td>
-                                    <td data-label="Data do Pedido">04/01/2016</td>
-                                    <td data-label="Nome do Cliente">Raphael Machado Freire</td>
-                                    <td data-label="Data do Pagamento">03/31/2016</td>
-                                    <td data-label="Data do Envio">03/31/2016</td>
-                                    <td data-label="Forma de Envio">Correios Convencional</td>
-                                    <td data-label="Previsão de Entrega">03/31/2016</td>
-                                </tr>
 
 
 
-                                <tr>
-                                    <td data-label="Número do Pedido">7</td>
-                                    <td data-label="Data do Pedido">04/01/2016</td>
-                                    <td data-label="Nome do Cliente">Raphael Machado Freire</td>
-                                    <td data-label="Data do Pagamento">03/31/2016</td>
-                                    <td data-label="Data do Envio">03/31/2016</td>
-                                    <td data-label="Forma de Envio">Correios Convencional</td>
-                                    <td data-label="Previsão de Entrega">03/31/2016</td>
-                                </tr>
 
 
-
-                                <tr>
-                                    <td data-label="Número do Pedido">8</td>
-                                    <td data-label="Data do Pedido">04/01/2016</td>
-                                    <td data-label="Nome do Cliente">Raphael Machado Freire</td>
-                                    <td data-label="Data do Pagamento">03/31/2016</td>
-                                    <td data-label="Data do Envio">03/31/2016</td>
-                                    <td data-label="Forma de Envio">Correios Convencional</td>
-                                    <td data-label="Previsão de Entrega">03/31/2016</td>
-                                </tr>
 
 
                             </tbody>
